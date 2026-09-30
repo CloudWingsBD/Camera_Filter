@@ -1,0 +1,3 @@
+# Strip Jupyter outputs on commit: they embed photos from the private dataset.
+# The filter is defined in this clone's .git/config (filter.strip-notebook-output.*).
+*.ipynb filter=strip-notebook-output

@@ -1,2 +1,22 @@
 .DS_Store
 **/.DS_Store
+
+# Data: never commit (private photos, aligned pairs, splits, file lists)
+/data/
+
+# Model weights: large binaries trained on the private photos
+*.pt
+*.pth
+
+# Safety net: no images in the notebook folder (the lens/ images are tracked on purpose)
+code/**/*.jpg
+code/**/*.jpeg
+code/**/*.png
+code/**/*.tif
+code/**/*.tiff
+code/**/*.heic
+code/**/*.dng
+
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
